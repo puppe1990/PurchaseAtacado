@@ -23,6 +23,7 @@
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <link rel="stylesheet" href="css/imports.min.css">
     <link rel="stylesheet" href="css/simpleStore.min.css">
+    <link rel="stylesheet" href="css/purchase.css">
 
     <!-- Favicon
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -120,12 +121,15 @@
                         <div class="cart_info_item cart_total"><b>Total:
                             <div class="simpleCart_grandTotal"></div>
                         </b></div>
-                        <a href="javascript:;" class="button button-primary simpleStore_checkout u-pull-right">Checkout <i class="fa fa-arrow-right"></i></a>
+                        <!--<a href="javascript:;" class="button button-primary simpleStore_checkout u-pull-right">Checkout <i class="fa fa-arrow-right"></i></a>-->
+
                     </div>
                 </div>
             </div>
         </div>
     </script>
+    <a href="https://api.whatsapp.com/send?phone=5551982230340&text=" onClick="fazerPedido()" target="_blank" class="button button-primary button-whats">Fazer pedido pelo WhatsApp <i class="fa fa-whatsapp"></i></a>
+
 
     <!-- Error View -->
     <script id="error-template" type="x-template">
@@ -156,5 +160,43 @@
 
 
 <script src="js/config.js"></script>
+<script type="text/javascript">
+
+    function fazerPedido() {
+
+        let lengthQuantity = document.querySelectorAll(".item-quantity").length;
+        let lengthName = document.querySelectorAll(".item-name").length;
+        let lengthPrice = document.querySelectorAll(".item-price").length;
+
+        var produto = [];
+
+
+        for (let i = 1; i <= lengthPrice - 1; i++) {
+            let name = document.querySelectorAll(".item-name")[i].innerHTML;
+            let price = document.querySelectorAll(".item-price")[i].innerHTML;
+            let quantity = document.querySelectorAll(".item-quantity")[i].innerHTML;
+
+            produto.push({name: name, quantity: quantity, price: price});
+        }
+
+        let produtos = "";
+
+        let inicio = "Olá estou comprando pela Purchase Atacado. ";
+
+        for (var key in produto) {
+          console.log(produtos += " Quero comprar: " + produto[key].quantity + " " + produto[key].name + " por " + produto[key].price + " cada.");
+        }
+
+
+        let valor = document.querySelector(".simpleCart_grandTotal").innerHTML;
+        let pedido = " Meu pedido total foi: " + valor + ".";
+
+        let msg =  "https://api.whatsapp.com/send?phone=5551982230340&text=" + inicio + produtos + " " + pedido;
+
+        document.querySelector(".button-whats").href = msg;
+        
+    }
+
+</script>
 
 </html>
