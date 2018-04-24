@@ -1,9 +1,18 @@
 .button-whats {
 	margin-left: 66%;
 }
+.descricao {
+	margin-left: 18%;
+	font-weight: bold;
+}
+
 
 @media (max-width: 842px) { 
 	.button-whats {
 		margin-left: 13%;
+	}
+	.descricao {
+		margin: 7%;
+		font-weight: bold;
 	}
 }
