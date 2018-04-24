@@ -4,7 +4,8 @@
 			"name" : "CASACO JACQUARD",
 			"price" : "49.90",
 			"options" : [
-				{ "Tamanho" : "PP,P,M,G" }
+				{ "Tamanho" : "PP,P,M,G" },
+				{ "Cor" : "Preto,Branco,Vermelho" }
 			],
 			"image" : "images/casaco-jacquard--p.jpeg",
 			"description" : "Casaco Jacquard atacado."

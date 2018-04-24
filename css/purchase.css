@@ -5,6 +5,9 @@
 	margin-left: 18%;
 	font-weight: bold;
 }
+.item-cor, .item-tamanho {
+	text-transform: capitalize;
+}
 
 
 @media (max-width: 842px) { 

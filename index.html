@@ -103,14 +103,14 @@
             <div class="row">
                 <div class="eight columns">
                     <div class="simpleCart_items"></div>
-                    <a href="javascript:;" class="simpleCart_empty u-pull-left">Carrinho Vazio <i class="fa fa-trash-o"></i></a>
+                    <a href="javascript:;" class="simpleCart_empty u-pull-left">Limpar Carrinho <i class="fa fa-trash-o"></i></a>
                 </div>
                 <div class="four columns">
                     <div class="cart_info">
                         <div class="cart_info_item cart_itemcount">Items:
                             <div class="simpleCart_quantity"></div>
                         </div>
-                        <div class="cart_info_item cart_taxrate">Tax Rate:
+                        <!--<div class="cart_info_item cart_taxrate">Tax Rate:
                             <div class="simpleCart_taxRate"></div>
                         </div>
                         <div class="cart_info_item cart_tax">Tax:
@@ -118,7 +118,7 @@
                         </div>
                         <div class="cart_info_item cart_shipping">Shipping:
                             <div class="simpleCart_shipping"></div>
-                        </div>
+                        </div>-->
                         <div class="cart_info_item cart_total"><b>Total:
                             <div class="simpleCart_grandTotal"></div>
                         </b></div>
@@ -176,8 +176,10 @@
             let name = document.querySelectorAll(".item-name")[i].innerHTML;
             let price = document.querySelectorAll(".item-price")[i].innerHTML;
             let quantity = document.querySelectorAll(".item-quantity")[i].innerHTML;
+            let cor = document.querySelectorAll(".item-cor")[i].innerHTML;
+            let tamanho = document.querySelectorAll(".item-tamanho")[i].innerHTML;
 
-            produto.push({name: name, quantity: quantity, price: price});
+            produto.push({name: name, cor: cor, tamanho: tamanho, quantity: quantity, price: price});
         }
 
         let produtos = "";
@@ -185,7 +187,7 @@
         let inicio = "Olá estou comprando pela Purchase Atacado. ";
 
         for (var key in produto) {
-          console.log(produtos += " Quero comprar: " + produto[key].quantity + " " + produto[key].name + " por " + produto[key].price + " cada.");
+            produtos += " QUERO COMPRAR: " + produto[key].quantity + " " + produto[key].name + " DA COR " + produto[key].cor + " NO TAMANHO " + produto[key].tamanho + " POR " + produto[key].price + " CADA.";
         }
 
 
