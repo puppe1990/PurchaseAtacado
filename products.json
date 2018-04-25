@@ -1,23 +1,223 @@
 {
 	"products" : [
 		{
-			"name" : "CASACO JACQUARD",
-			"price" : "49.90",
+			"name" : "Conjunto Atena",
+			"price" : "70.00",
 			"options" : [
-				{ "Tamanho" : "PP,P,M,G" },
-				{ "Cor" : "Preto,Branco,Vermelho" }
+				{ "Tamanho" : "Único" },
+				{ "Cor" : "Preto,Vermelho,Branco,Rosa" }
 			],
-			"image" : "images/casaco-jacquard--p.jpeg",
-			"description" : "Casaco Jacquard atacado."
+			"image" : "images/conjunto-atena-1.jpg",
+			"image2" : "images/conjunto-atena-2.jpg",
+			"description" : "Conjunto com bojo Malha Crepe tamanho único (36 ao 42)."
 		},
 		{
-			"name" : "Body Cavado Liso",
-			"price" : "39.90",
+			"name" : "Conjunto Capuz crepe",
+			"price" : "70.00",
 			"options" : [
-				{ "Tamanho" : "PP,P,M,G" }
+				{ "Tamanho" : "Único" },
+				{ "Cor" : "Preto,Vermelho" }
 			],
-			"image" : "images/body-body-cavado-liso--p.jpg",
-			"description" : "Body Cavado Liso Branco atacado."
-		}
+			"image" : "images/conjunto-capuz-crepe-1.jpg",
+			"image2" : "images/conjunto-capuz-crepe-2.jpg",
+			"description" : "Conjunto com capuz Malha Crepe tamanho único (36 ao 42)."
+		},
+		{
+			"name" : "Saia zíper Bruna Marquezine",
+			"price" : "55.00",
+			"options" : [
+				{ "Tamanho" : "Único" },
+				{ "Cor" : "Preto,Vermelho,Verde,Beje" }
+			],
+			"image" : "images/saia-ziper-bruna-marquezine-1.jpg",
+			"image2" : "images/saia-ziper-bruna-marquezine-2.jpg",
+			"description" : "Saia courino fake tamanho único (36 ao 42)."
+		},
+		{
+			"name" : "Body Lace Renda",
+			"price" : "40.00",
+			"options" : [
+				{ "Tamanho" : "Único" },
+				{ "Cor" : "Preto,vermelho,off,azul,salmão" }
+			],
+			"image" : "images/body-lace-renda-1.jpg",
+			"image2" : "images/body-lace-renda-2.jpg",
+			"description" : "Body Lace com bojo tamanho único (36 ao 42)."
+		},
+		{
+			"name" : "Cropped Transpassado",
+			"price" : "35.00",
+			"options" : [
+				{ "Tamanho" : "Único" },
+				{ "Cor" : "Preto,vermelho,off,azul escuro,pink" }
+			],
+			"image" : "images/cropped-transpassado-1.jpg",
+			"image2" : "images/cropped-transpassado-2.jpg",
+			"description" : "Cropped transpassado Tecido Bengaline com bojo tamanho único (36 ao 42)."
+		},
+		{
+			"name" : "Casaco Jacquard",
+			"price" : "55.00",
+			"options" : [
+				{ "Tamanho" : "Único" },
+				{ "Cor" : "Preto,branco,marrom" }
+			],
+			"image" : "images/casaco-jacquard-1.jpg",
+			"image2" : "images/casaco-jacquard-2.jpg",
+			"description" : "Casaco Malha Jacquard tamanho único (36 ao 42)."
+		},
+		{
+			"name" : "Vestido canelado Botões",
+			"price" : "50.00",
+			"options" : [
+				{ "Tamanho" : "Único" },
+				{ "Cor" : "Preto,marsala,cinza" }
+			],
+			"image" : "images/vestido-canelado-botoes-1.jpg",
+			"image2" : "images/vestido-canelado-botoes-2.jpg",
+			"description" : "Vestido botoes Malha canelada com bojo tamanho único (36 ao 42)."
+		},
+		{
+			"name" : "Body Canelado botões",
+			"price" : "45.00",
+			"options" : [
+				{ "Tamanho" : "Único" },
+				{ "Cor" : "Preto,vermelho,cinza" }
+			],
+			"image" : "images/body-canelado-botoes-1.jpg",
+			"image2" : "images/body-canelado-botoes-2.jpg",
+			"description" : "Body botoes Malha canelada com bojo tamanho único (36 ao 42)."
+		},
+		{
+			"name" : "Calça Pantacourt",
+			"price" : "50.00",
+			"options" : [
+				{ "Tamanho" : "Único" },
+				{ "Cor" : "Preto, vermelho, branco, Rosa" }
+			],
+			"image" : "images/calca-tecido-bengaline-1.jpg",
+			"image2" : "images/calca-tecido-bengaline-2.jpg",
+			"description" : "Calça Tecido Bengaline Tamanho único (36 ao 42)."
+		},
+		{
+			"name" : "Calça listra no lado",
+			"price" : "50.00",
+			"options" : [
+				{ "Tamanho" : "Único" },
+				{ "Cor" : "Preto, vermelho, branco" }
+			],
+			"image" : "images/calca-listra-lado-1.jpg",
+			"image2" : "images/calca-listra-lado-2.jpg",
+			"description" : "Calça tecido viscose Tamanho único (36 ao 42)."
+		},
+		{
+			"name" : "Conjunto Moleton",
+			"price" : "80.00",
+			"options" : [
+				{ "Tamanho" : "Único" },
+				{ "Cor" : "Preto,branco" }
+			],
+			"image" : "images/conjunto-moleton-1.jpg",
+			"image2" : "images/conjunto-moleton-2.jpg",
+			"description" : "Conjunto Moleton Flanelado Tamanho único (36 ao 42)."
+		},
+		{
+			"name" : "Vestido canelado manga comprida",
+			"price" : "50.00",
+			"options" : [
+				{ "Tamanho" : "Único" },
+				{ "Cor" : "Preto,marsala" }
+			],
+			"image" : "images/vestido-canelado-manga-comprida-1.jpg",
+			"image2" : "images/vestido-canelado-manga-comprida-2.jpg",
+			"description" : "Vestido Malha canelada com bojo Tamanho único (36 ao 42)."
+		},
+		{
+			"name" : "Vestido decote manga comprida",
+			"price" : "50.00",
+			"options" : [
+				{ "Tamanho" : "Único" },
+				{ "Cor" : "Preto,azul,verde" }
+			],
+			"image" : "images/vestido-decote-manga-comprida-1.jpg",
+			"description" : "Vestido Malha canelada com bojo Tamanho único (36 ao 42)."
+		},
+		{
+			"name" : "Cropped faixa",
+			"price" : "30.00",
+			"options" : [
+				{ "Tamanho" : "Único" },
+				{ "Cor" : "Preto,vermelho,branco" }
+			],
+			"image" : "images/cropped-faixa-1.jpg",
+			"image2" : "images/cropped-faixa-2.jpg",
+			"description" : "Cropped malha suplex com bojo Tamanho único (36 ao 42)."
+		},
+		{
+			"name" : "Cropped Courino",
+			"price" : "40.00",
+			"options" : [
+				{ "Tamanho" : "Único" },
+				{ "Cor" : "Preto,marsala,caramelo" }
+			],
+			"image" : "images/cropped_courino-1.jpg",
+			"image2" : "images/cropped_courino-2.jpg",
+			"description" : "Cropped courino fake com bojo Tamanho único (36 ao 42)."
+		},
+		{
+			"name" : "Blazer Neoprene",
+			"price" : "50.00",
+			"options" : [
+				{ "Tamanho" : "Único" },
+				{ "Cor" : "Preto,marsala,branco,rosa" }
+			],
+			"image" : "images/blazer-neoprene-1.jpg",
+			"image2" : "images/blazer-neoprene-2.jpg",
+			"description" : "Blazer Malha Neoprene tamanho único (36 ao 42)."
+		},
+		{
+			"name" : "Conjunto de Vinil",
+			"price" : "80.00",
+			"options" : [
+				{ "Tamanho" : "Único" },
+				{ "Cor" : "Preto,marsala,beje" }
+			],
+			"image" : "images/conjunto-vinil-1.jpg",
+			"image2" : "images/conjunto-vinil-2.jpg",
+			"description" : "Conjunto Vinil com bojo  tamanho único (36 ao 42)."
+		},
+		{
+			"name" : "Macacão preto e branco",
+			"price" : "80.00",
+			"options" : [
+				{ "Tamanho" : "Único" },
+				{ "Cor" : "Preto,Branco" }
+			],
+			"image" : "images/macacao-preto-branco-1.jpg",
+			"image2" : "images/macacao-preto-branco-2.jpg",
+			"description" : "Macacão Crepe com bojo  tamanho único (36 ao 42)."
+		},
+		{
+			"name" : "Saia de Vinil Ziper",
+			"price" : "40.00",
+			"options" : [
+				{ "Tamanho" : "Único" },
+				{ "Cor" : "Vermelha" }
+			],
+			"image" : "images/saia-vinil-ziper-1.jpg",
+			"image2" : "images/saia-vinil-ziper-2.jpg",
+			"description" : "Saia de Vinil zíper tamanho único (36 ao 42)."
+		},
+		{
+			"name" : "Cropped de pelinhos",
+			"price" : "40.00",
+			"options" : [
+				{ "Tamanho" : "Único" },
+				{ "Cor" : "Preto,azul,marsala,off" }
+			],
+			"image" : "images/cropped-pelinho-1.jpg",
+			"image2" : "images/cropped-pelinho-2.jpg",
+			"description" : "Cropped Tamanho único (36 ao 42)."
+		}		
 	]
 }

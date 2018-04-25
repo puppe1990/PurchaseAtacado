@@ -22,13 +22,14 @@
     <!-- CSS
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <link rel="stylesheet" href="css/imports.min.css">
-    <link rel="stylesheet" href="css/simpleStore.min.css">
+    <link rel="stylesheet" href="css/simpleStore.css">
+<!--     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick-theme.css"> -->
     <link rel="stylesheet" href="css/purchase.css">
 
     <!-- Favicon
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <!-- <link rel="icon" type="image/png" href="images/favicon.png"> -->
-    <link href="https://cdn.simplo7.net/static/17741/configuracao/favicon.png" type="image/x-icon" rel="icon" />
+    <link rel="icon" type="image/png" href="images/favicon.png">
 
 </head>
 <body>
@@ -61,7 +62,7 @@
                         <span class="item_price"></span>
                     </div>
                     <div class="simpleStore_getDetail_container">
-                        <a class="button u-pull-right simpleStore_getDetail">Detalhes</a>
+                        <a class="button u-pull-right simpleStore_getDetail" id="detalhes">Detalhes</a>
                     </div>
                 </div>
             </div>
@@ -75,7 +76,10 @@
 
             <div class="row">
                 <div class="four columns">
-                    <img src="" class="item_thumb"/>
+                    <div class="carousel">
+                        <img src="" class="item_thumb"/>
+                        <img src="" class="item_thumb2"/>
+                    </div>
                 </div>
                 <div class="eight columns">
                     <h5 class="item_name"></h5>
@@ -155,51 +159,22 @@
 <!-- Scripts
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+<!-- <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.js"></script> -->
+
 <script src="js/simpleCart.min.js"></script>
-<script src="js/simpleStore.min.js"></script>
-<script src="plugins/google-sheets.js"></script>
+<script src="js/simpleStore.js"></script>
+<!-- <script src="plugins/google-sheets/google-sheets.js"></script> -->
 
 
 <script src="js/config.js"></script>
+<script src="js/purchase.js"></script>
 <script type="text/javascript">
-
-    function fazerPedido() {
-
-        let lengthQuantity = document.querySelectorAll(".item-quantity").length;
-        let lengthName = document.querySelectorAll(".item-name").length;
-        let lengthPrice = document.querySelectorAll(".item-price").length;
-
-        var produto = [];
-
-
-        for (let i = 1; i <= lengthPrice - 1; i++) {
-            let name = document.querySelectorAll(".item-name")[i].innerHTML;
-            let price = document.querySelectorAll(".item-price")[i].innerHTML;
-            let quantity = document.querySelectorAll(".item-quantity")[i].innerHTML;
-            let cor = document.querySelectorAll(".item-cor")[i].innerHTML;
-            let tamanho = document.querySelectorAll(".item-tamanho")[i].innerHTML;
-
-            produto.push({name: name, cor: cor, tamanho: tamanho, quantity: quantity, price: price});
-        }
-
-        let produtos = "";
-
-        let inicio = "Olá estou comprando pela Purchase Atacado. ";
-
-        for (var key in produto) {
-            produtos += " QUERO COMPRAR: " + produto[key].quantity + " " + produto[key].name + " DA COR " + produto[key].cor + " NO TAMANHO " + produto[key].tamanho + " POR " + produto[key].price + " CADA.";
-        }
-
-
-        let valor = document.querySelector(".simpleCart_grandTotal").innerHTML;
-        let pedido = " Meu pedido total foi: " + valor + ".";
-
-        let msg =  "https://api.whatsapp.com/send?phone=5551982230340&text=" + inicio + produtos + " " + pedido;
-
-        document.querySelector(".button-whats").href = msg;
-        
-    }
-
+    $(document).ready(function(){
+        // $("#detalhes").click(function(){
+        //     $('.carousel').slick();
+        // });
+    });    
 </script>
 
 </html>
